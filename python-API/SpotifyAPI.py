@@ -18,19 +18,39 @@ class SpotifyAPI:
         f = open('./config.json')
         config = json.load(f)
 
-        #self.tleFile = config["tleFile"]
-        self.useConfig = False
-        #self.licenseFile = config["licenseFile"]
+        self.spotifyKey = config["spotifyKey"]
+        self.adminKey = config["adminKey"]
+        self.useConfig = True
         
         f.close()
 
+    def _auth(self):
+
+        # Auth workflow for getting information from Spotify
+        
+        return
+
     def getCurrentSong(self):
         
-        songJSON = {"SatelliteList":self.song}
-        JSONstring = json.dumps(songJSON)
+        musicJSON = {"MusicInfo":self.song}
+        JSONstring = json.dumps(musicJSON)
 
         return JSONstring
+    
+    def getSongDuration(self):
 
+        return
+
+    def getCurrentLocation(self):
+
+        return
+    
+    def offline(self):
+
+        #workflow to return json when user is offline.
+
+        return
+    
     def propagate(self):
         
         return
@@ -56,10 +76,6 @@ class SpotifyAPI:
     
         print("Done generating the CZML Document")
         return CzmlDoc
-        
-    def getKeys(self):
-
-        return
     
     def getOrbitRegime(self,TLE):
     
