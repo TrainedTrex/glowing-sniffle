@@ -1,2 +1,2 @@
 # glowing-sniffle
-python backend service that provides data via API
+python backend service that provides Spotify currently playing via API
