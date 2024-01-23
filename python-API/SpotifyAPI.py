@@ -43,6 +43,8 @@ class SpotifyAPI:
 
     def getCurrentLocation(self):
 
+        #Get the current time into the song, TBD on if this is going to be used. 
+
         return
     
     def offline(self):
