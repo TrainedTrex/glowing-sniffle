@@ -8,7 +8,7 @@ CORS(app)
 @app.route('/api')
 def Home():
     return 'This is the homepage for the API'
- 
+
 @app.route('/api/CurrentSong')
 def Song():
     curSong = getCurrentSong()

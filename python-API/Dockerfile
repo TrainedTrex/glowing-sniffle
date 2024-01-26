@@ -1,5 +1,5 @@
-FROM pythonnet/pythonnet:python3.5-mono4.8.0-pythonnet2.3.0
-LABEL maintainer="Klaus.Konarkowski@Ansys.com"
+FROM python:3
+LABEL maintainer="EMAIL"
 
 WORKDIR /app
 
